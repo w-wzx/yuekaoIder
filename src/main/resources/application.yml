@@ -1,0 +1,23 @@
+server:
+  port: 6060
+  context-path: /
+
+logging:
+  file: d:/xxx2.log
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot2?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+  
+  
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ww.entity
